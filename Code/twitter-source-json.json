@@ -1,0 +1,20 @@
+{
+ "name": "twitter_source_json",
+ "config": {
+   "connector.class": "com.github.jcustenborder.kafka.connect.twitter.TwitterSourceConnector",
+   "twitter.oauth.accessToken": "",
+   "twitter.oauth.consumerSecret": "",
+   "twitter.oauth.consumerKey": "",
+   "twitter.oauth.accessTokenSecret": "",
+   "kafka.delete.topic": "twitter_deletes_json",
+   "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+   "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+   "key.converter.schema.registry.url": "http://localhost:8081",
+   "value.converter.schema.registry.url": "http://localhost:8081",
+   "value.converter.schemas.enable": false,
+   "key.converter.schemas.enable": false,
+   "kafka.status.topic": "twitterDataJson",
+   "process.deletes": false,
+   "filter.keywords": "tennis"
+ }
+}
