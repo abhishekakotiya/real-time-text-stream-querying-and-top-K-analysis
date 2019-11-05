@@ -21,7 +21,7 @@ We used Apache Spark to generate streams of tweets from Kafka and then
 * Calculated the Top K Heavy hitters using the sketch from the stream.
 * Printed the Heavy hitters periodically
 
-**Note**: To run this code, add your own access tokens and keys from your Twitter Developer Account in the empty strings in the **twitter-source-json.json** config file.
+**Note**: To run this code, add your own access tokens and keys from your twitter developer account in the empty strings in the **twitter-source-json.json** config file.
 
 
 For information related to Elasticsearch querying and implementation, refer ElasticsearchDocumentation.pdf
